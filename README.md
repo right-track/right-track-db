@@ -1,5 +1,5 @@
 Right Track Database Interface
-------------------------------
+==============================
 
 This is the abstract `RightTrackDB` Class that is used by the Right Track projects
 to query the SQLite [Right Track Database](https://github.com/right-track/right-track-db-build).
