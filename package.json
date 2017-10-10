@@ -1,0 +1,15 @@
+{
+  "name": "right-track-db-template",
+  "version": "0.0.1",
+  "description": "Right Track Database Template",
+  "author": "David Waring <dev@davidwaring.net> (https://davidwaring.net)",
+  "main": "src/index.js",
+  "scripts": {
+    "docs": "jsdoc -c jsdoc.json --readme README.md --template $NODE_PATH/docdash"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/right-track/right-track-db-template.git"
+  },
+  "license": "MIT"
+}
