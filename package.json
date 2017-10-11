@@ -1,7 +1,7 @@
 {
-  "name": "right-track-db-template",
+  "name": "right-track-db-abstract",
   "version": "1.0.0",
-  "description": "Right Track Database Template",
+  "description": "Right Track Database (Abstract)",
   "author": "David Waring <dev@davidwaring.net> (https://davidwaring.net)",
   "main": "src/index.js",
   "scripts": {

@@ -1,7 +1,11 @@
-Right Track Database Interface
-==============================
+Right Track Database (Abstract)
+===============================
 
-This is the abstract `RightTrackDB` Class that is used by the Right Track projects
+#### node module: [right-track-db-abstract](https://www.npmjs.com/package/right-track-db-abstract)
+
+---
+
+This is the abstract `RightTrackDB` Class that is used by various [Right Track projects](https://github.com/right-track) 
 to query the SQLite [Right Track Database](https://github.com/right-track/right-track-db-build).
 
 An implementation of this Class, such as [right-track-db-sqlite3](https://github.com/right-track/right-track-db-sqlite3),
@@ -35,4 +39,4 @@ An implementation of this Class must have the following functions:
  ### Documentation
  
  Documentation can be found in the **/doc/** directory of this repository 
- or online at [https://docs.righttrack.io/right-track-db-template](https://docs.righttrack.io/right-track-db-template).
+ or online at [https://docs.righttrack.io/right-track-db-abstract](https://docs.righttrack.io/right-track-db-abstract).
