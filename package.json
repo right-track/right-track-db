@@ -1,5 +1,5 @@
 {
-  "name": "right-track-db-abstract",
+  "name": "right-track-db",
   "version": "1.1.1",
   "description": "Right Track Database (Abstract)",
   "author": "David Waring <dev@davidwaring.net> (https://davidwaring.net)",
@@ -11,10 +11,10 @@
   "homepage": "https://righttrack.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/right-track/right-track-db-abstract.git"
+    "url": "https://github.com/right-track/right-track-db.git"
   },
   "bugs": {
-    "url": "https://github.com/right-track/right-track-db-abstract/issues",
+    "url": "https://github.com/right-track/right-track-db/issues",
     "email": "dev@davidwaring.net"
   }
 }

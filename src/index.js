@@ -1,8 +1,8 @@
 'use strict';
 
 /**
- * Right Track Database Interface
- * ------------------------------
+ * Right Track Database
+ * --------------------
  *
  * This is the abstract `RightTrackDB` Class that is used by the Right Track projects
  * to query the SQLite [Right Track Database](https://github.com/right-track/right-track-db-build).

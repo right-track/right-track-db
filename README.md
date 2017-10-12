@@ -1,7 +1,7 @@
 Right Track Database (Abstract)
 ===============================
 
-#### node module: [right-track-db-abstract](https://www.npmjs.com/package/right-track-db-abstract)
+#### node module: [right-track-db](https://www.npmjs.com/package/right-track-db)
 
 ---
 
@@ -39,4 +39,4 @@ An implementation of this Class must have the following functions:
  ### Documentation
  
  Documentation can be found in the **/doc/** directory of this repository 
- or online at [https://docs.righttrack.io/right-track-db-abstract](https://docs.righttrack.io/right-track-db-abstract).
+ or online at [https://docs.righttrack.io/right-track-db](https://docs.righttrack.io/right-track-db).
