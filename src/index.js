@@ -1,5 +1,7 @@
 'use strict';
 
+const path = require('path');
+
 /**
  * Right Track Database
  * --------------------
@@ -12,10 +14,11 @@
  *
  * An implementation of this Class must have the following functions:
  *
- * - `constructor({string} id, {string} location)`:
+ * - `constructor({RightTrackAgency} agency)`:
  *  - this is used to initialize the SQLite database
- *  - `id`: the Right Track agency id code
- *  - `location`: the path to the SQLite database
+ *  - `agency`: The `RightTrackAgency` this DB will be used to query.  The
+ *     agency must have the configuration properties set to the agency's id
+ *     as well as the database location.
  *
  * - `select({string} statement, {function} callback)`:
  *  - this is used to SELECT multiple rows from the SQLite database using
@@ -44,17 +47,48 @@ class RightTrackDB {
    * Right Track Database Constructor
    * @constructor
    * @abstract
-   * @param {string} id Agency ID
-   * @param {string} location File path to the Right Track database
+   * @param {RightTrackAgency} agency The Right Track Agency this DB will be used to query
    */
-  constructor(id, location) {
+  constructor(agency) {
     if (new.target === RightTrackDB) {
       throw new TypeError("Cannot instantiate an abstract RightTrackDB class.  You must use a specific RightTrackDB implementation.");
     }
 
-    this.id = id;
-    this.location = location;
+    // Check agency configuration
+    let config = agency.getConfig();
+    if ( config === undefined ) {
+      throw new Error("The RightTrackAgency has no configuration properties");
+    }
+
+    // Set Database properties
+    this._agency = agency;
   }
+
+
+  /**
+   * The RightTrackAgency this DB is used to query
+   * @returns {RightTrackAgency}
+   */
+  get agency() {
+    return this._agency;
+  }
+
+  /**
+   * The Right Track Agency id code
+   * @returns {string}
+   */
+  get id() {
+    return this._agency.getConfig().id;
+  }
+
+  /**
+   * The path to the SQLite Right Track DB
+   * @returns {string}
+   */
+  get location() {
+    return path.normalize(this._agency.getConfig().db.location);
+  }
+
 
   /**
    * Select multiple rows from the database

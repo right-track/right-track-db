@@ -13,10 +13,11 @@ which uses the node `sqlite3` module, is what will actually be used in the proje
 
 An implementation of this Class must have the following functions:
 
-- `constructor({string} id, {string} location)`:
+- `constructor({RightTrackAgency} agency)`:
     - this is used to initialize the SQLite database
-    - `id`: the Right Track agency id code
-    - `location`: the path to the SQLite database
+    - `agency`: The `RightTrackAgency` this DB will be used to query.  The 
+    agency must have the configuration properties set to the agency's id 
+    as well as the database location.
 
 - `select({string} statement, {function} callback)`:
     - this is used to SELECT multiple rows from the SQLite database using 
