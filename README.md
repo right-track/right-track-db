@@ -1,7 +1,8 @@
 Right Track Database (Abstract)
 ===============================
 
-#### node module: [right-track-db](https://www.npmjs.com/package/right-track-db)
+**node module:** [right-track-db](https://www.npmjs.com/package/right-track-db)  
+**GitHub repo:** [right-track/right-track-db](https://github.com/right-track/right-track-db)
 
 ---
 
