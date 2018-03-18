@@ -1,7 +1,5 @@
 'use strict';
 
-const path = require('path');
-
 /**
  * Right Track Database
  * --------------------
@@ -86,7 +84,7 @@ class RightTrackDB {
    * @returns {string}
    */
   get location() {
-    return path.normalize(this._agency.getConfig().db.location);
+    return this._agency.getConfig().db.location;
   }
 
 
